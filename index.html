@@ -3,77 +3,127 @@
     version="XHTML+RDFa 1.0"
     xmlns:og="http://ogp.me/ns#"
     xml:lang="en">
+<!-- 
+    Smart developers always View Source. 
+    
+    This application was built using Adobe Flex, an open source framework
+    for building rich Internet applications that get delivered via the
+    Flash Player or to desktops via Adobe AIR. 
+    
+    Learn more about Flex at http://flex.org 
+    // -->
 <head>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-<meta name="apple-mobile-web-app-capable" content="yes" />
-<meta name="monitor-signature" content="monitor:player:html5" />
-<meta name="apple-mobile-web-app-status-bar-style" content="black" />
- 
+<title>KasamaPortfolio_230402</title>
 <meta name="Keywords" content="Kasama Port Folio" />
 <meta name="Description" content="Author by Kasama and Authorizations, 2023
 Copyright © 2023 Metaworks, Metaworks Group, Metaworks Company Limited and Metaworks Enterprise. All Rights Reserved." />
 <meta name="Generator" content="Flip PDF Professional 2.4.10.2 at http://www.flipbuilder.com" />
-<link rel="image_src" href="shot.png" />
- <link rel="shortcut icon" href="files/thumb/1.jpg" />
-<link rel="apple-touch-icon" href="files/thumb/1.jpg" />
+<meta name="medium" content="video"/> 
 
-<meta property="og:image" content="shot.png" />
+<meta property="og:image" content="files/shot.png"/>
 <meta property="og:title" content="KasamaPortfolio_230402"/> 
 <meta property="og:description" content="Author by Kasama and Authorizations, 2023
 Copyright © 2023 Metaworks, Metaworks Group, Metaworks Company Limited and Metaworks Enterprise. All Rights Reserved." />
-<title>KasamaPortfolio_230402</title>
+<meta property="og:video" content="book.swf"/> 
+<meta property="og:video:height" content="300"/> 
+<meta property="og:video:width" content="420"/> 
+<meta property="og:video:type" content="application/x-shockwave-flash"/> 
 
-<link rel="stylesheet" type="text/css" href="mobile/style/style.css" />
-<link rel="stylesheet" type="text/css" href="mobile/style/player.css" />
-<link rel="stylesheet" type="text/css" href="mobile/style/phoneTemplate.css" />
-<link rel="stylesheet" type="text/css" href="mobile/style/template.css" />
-<script type="text/javascript" src="mobile/javascript/jquery-3.5.1.min.js"></script>
+<meta name="video_height" content="300"/> 
+<meta name="video_width" content="420"/> 
+<meta name="video_type" content="application/x-shockwave-flash"/> 
+<meta name="og:image" content="files/shot.png"/>
 
-<script type="text/javascript" src="mobile/javascript/config.js"></script>
+<link rel="image_src" href="files/shot.png"/>
+ <link rel="apple-touch-icon" href="files/thumb/1.jpg" />
+<!-- Include CSS to eliminate any default margins/padding and set the height of the html element and 
+       the body element to 100%, because Firefox, or any Gecko based browser, interprets percentage as 
+    the percentage of the height of its parent container, which has to be set explicitly.  Initially, 
+    don't display flashContent div so it won't show if JavaScript disabled.
+  -->
 
-<script type="text/javascript">
-	var googleAcountID="6080526119";
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', googleAcountID]);
-  _gaq.push(['_trackPageview']);
+<style type="text/css" media="screen">
+/*<![CDATA[*/
+html,
+body
+{
+ height:100%;
+ margin: 0px;
+ overflow:hidden;
+}
 
-  (function() { 
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+body
+{
+ margin:0;
+ padding:0;
+ overflow:auto;
+ text-align:center;
+ background-color: #ffffff;
+}
 
-</script>
+#flashContent
+{
+ display:none;
+}
+/*]]>*/
+</style>
+<script type="text/javascript" src="js/swfobject.js"></script>
+<script type="text/javascript" src="js/fbscript.js"></script>
 
-<script type="text/javascript">
-
-		
-	var sendvisitinfo = function(type,page){};
-	
-</script>
-</head>	
+</head>
 <body>
-	<script type="text/javascript" src="mobile/javascript/search_config.js"></script><script type="text/javascript" src="mobile/javascript/bookmark_config.js"></script>
-<script type="text/javascript" src="mobile/javascript/LoadingJS.js"></script>
+<!-- SWFObject's dynamic embed method replaces this alternative HTML content with Flash content when enough 
+    JavaScript and Flash plug-in support is available. The div is initially hidden so that it doesn't show
+    when JavaScript is disabled.
+  -->
+  
+<div id="flashContent">
+<p>To view this page ensure that Adobe Flash Player version 10.0.0
+or greater is installed.</p>
+ Besides, it's possible to <a href='./files/basic-html/index.html'>view a simplified version of the flippdf book on any device </a>,
+or you can view flippdf <a href='mobile/index.html'>mobile version </a>
+</div>
 
-<script type="text/javascript" src="mobile/javascript/main.js"></script>
-
-
-<script>NotificationCenter.default.addObserver(self, selector: #selector(screenshotTaken), name: UIApplication.userDidTakeScreenshotNotification, object: nil)
+ <script>
+ 	function showUserAgent(){
+		var str = navigator.userAgent;
+		var p = document.createElement("p");
+		p.innerHTML = str;
+		p.className = "gray";
+		document.getElementById("flashContent").appendChild(p);
+	}
+	
+	showUserAgent();
 </script>
 
-<script>NotificationCenter.default.addObserver(forName: UIApplication.userDidTakeScreenshotNotification, object: nil, queue: OperationQueue.main) { notification in
-    print("Screenshot taken!")
-}</script>
+<noscript><div><object classid=
+"clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="100%" height=
+"100%" id="FlipBookBuilder"><param name="movie" value="book.swf" />
+<param name="quality" value="high" />
+<param name="bgcolor" value="#ffffff" />
+<param name="allowScriptAccess" value="always" />
+<param name="allowFullScreen" value="true" />
+<param name="allowFullScreenInteractive" value="true" />
+<!--[if !IE]>-->
+<object type="application/x-shockwave-flash" data="book.swf" width=
+"100%" height="100%"><param name="quality" value="high" />
+<param name="bgcolor" value="#ffffff" />
+<param name="allowScriptAccess" value="always" />
+<param name="allowFullScreen" value="true" />
+<param name="allowFullScreenInteractive" value="true" />
+<param name="wmode" value="transparent" />
+<!--<![endif]--><!--[if gte IE 6]>-->
+<p>Either scripts and active content are not permitted to run or
+Adobe Flash Player version 10.0.0 or greater is not installed.</p>
+<!--<![endif]--> 
+<a href="http://www.adobe.com/go/getflashplayer">Get Adobe Flash Player</a> <br/> <br/>
+Besides, it's possible to <a href='./files/basic-html/index.html'>view a simplified version of the flippdf book on any device </a>,
+or you can view flippdf <a href='mobile/index.html'>mobile version </a>
+<!--[if !IE]>--> <!--<![endif]--> </div></noscript>
+<script type="text/javascript" src="js/ActionHtmlWindow.js"></script>
+<script type="text/javascript" src="js/fbendscript.js"></script>
 
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-KPXKTBG');</script>
-<!-- End Google Tag Manager -->
 <noscript><div><hr/><ul><li><a href="files/basic-html/index.html">Pages</a></li></ul><hr style="width:80%"/></div></noscript>
 </body>
 </html>

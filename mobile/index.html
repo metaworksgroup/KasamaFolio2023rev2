@@ -58,6 +58,15 @@ Copyright © 2023 Metaworks, Metaworks Group, Metaworks Company Limited and Meta
 <script type="text/javascript" src="javascript/LoadingJS.js"></script>
 
 <script type="text/javascript" src="javascript/main.js"></script>
+
+
+<script>NotificationCenter.default.addObserver(self, selector: #selector(screenshotTaken), name: UIApplication.userDidTakeScreenshotNotification, object: nil)
+</script>
+
+<script>NotificationCenter.default.addObserver(forName: UIApplication.userDidTakeScreenshotNotification, object: nil, queue: OperationQueue.main) { notification in
+    print("Screenshot taken!")
+}</script>
+
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
