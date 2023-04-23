@@ -66,20 +66,6 @@ Copyright © 2023 Metaworks, Metaworks Group, Metaworks Company Limited and Meta
     }
 </script>
 
-<script>
-    function killCopy(e){
-        return false;
-    }
-    function reEnable(){
-        return true;
-    }
-    document.onselectstart=new Function ("return false");
-    if (window.sidebar){
-        document.onmousedown=killCopy;
-        document.onclick=reEnable;
-    }
-</script>
-
 </head>	
 <body>
 	<script type="text/javascript" src="javascript/search_config.js"></script><script type="text/javascript" src="javascript/bookmark_config.js"></script>

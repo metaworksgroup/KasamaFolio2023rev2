@@ -84,20 +84,6 @@ body
   }
 </script>
 
-<script>
-  function killCopy(e){
-      return false;
-  }
-  function reEnable(){
-      return true;
-  }
-  document.onselectstart=new Function ("return false");
-  if (window.sidebar){
-      document.onmousedown=killCopy;
-      document.onclick=reEnable;
-  }
-</script>
-
 </head>
 <body>
 <!-- SWFObject's dynamic embed method replaces this alternative HTML content with Flash content when enough 
